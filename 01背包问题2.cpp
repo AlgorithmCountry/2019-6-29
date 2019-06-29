@@ -1,11 +1,11 @@
-//优化
+//浼樺寲
 #include<iostream>
 #include<algorithm>
 using namespace std;
 const int N=1001;
-int n,m;//n表示物品个数，m表示背包容量
+int n,m;//n琛ㄧず鐗╁搧涓暟锛宮琛ㄧず鑳屽寘瀹归噺
 int v[N],w[N];
-int f[N][N];
+int f[N];
 int main(){
 	cin>>n>>m;
 	for(int i=1;i<=n;i++){
@@ -17,6 +17,6 @@ int main(){
 			//f[i][j]=max(f[i][j],f[i-1][j-v[i]]+w[i]);
 		}
 	}
-	cout<<f[n][m]<<endl;
+	cout<<f[m]<<endl;
 	return 0;
 }
